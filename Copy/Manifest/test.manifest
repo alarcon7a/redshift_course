@@ -1,0 +1,6 @@
+{
+    "entries": [
+        {"url":"<Ruta del archivo>", "mandatory":true},
+        {"url":"<Ruta del archivo>", "mandatory":true}
+    ]
+}
