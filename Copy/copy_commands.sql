@@ -6,14 +6,14 @@ apellido varchar(20),
 edad int2, 
 fecha_ingreso date );
 
---Cargue con banner y delimitado por ; (Fallan los dos primeros)
+--Cargue con banner y delimitado por; 
 copy estudiante from '<Ruta del archivo>' 
 credentials 'aws_iam_role=<I am ARN>' 
 region '<Region>'
-delimiter ';'-- sin delimiter primero
-ignoreheader 1 -- sin header primero
-IGNOREBLANKLINES -- sin IGNOREBLANKLINES primer
-BLANKSASNULL -- sin IGNOREBLANKLINES primer
+delimiter ';'
+ignoreheader 1 
+IGNOREBLANKLINES
+BLANKSASNULL 
 ;
 
 --Cargue con banner y delimitado por ; con otro formato
